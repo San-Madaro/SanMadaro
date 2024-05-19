@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head class="head" id="headSitio"></head>
+
+<body>
+  <header id="headerSitio"></header>
+  <main>
+    <div class="reserva">
+      <h2>Reserva de Turno</h2>
+
+      <form action="procesar_reserva.php" method="post">
+        <div>
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+        <div>
+          <label for="hora">Hora:</label>
+          <input type="time" id="hora" name="hora" required>
+        </div>
+        <div>
+          <label for="especialista">Especialista:</label>
+          <select id="especialista" name="especialista" required>
+            <option value="">Seleccione un especialista</option>
+            <option value="Santiago Carnabuci">Santiago Carnabuci</option>
+            <option value="Lorem Ipsum">Lorem Ipsum</option>
+            <option value="Lorem Ipsum">Lorem Ipsum</option>
+            <option value="Lorem Ipsum">Lorem Ipsum</option>
+          </select>
+        </div>
+        <button type="submit" class="reservar">Reservar Turno</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>Direccion: calle falsa 123</p>
+    <p>Telefono: 15-1234-4321</p>
+    <p>®Spa San Madaro 2024</p>
+  </footer>
+  <script src="../assets/js/headSitio.js"></script>
+  <script src="../assets/js/headerSitio.js"></script>
+</body>
+
+</html>

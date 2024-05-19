@@ -1,0 +1,497 @@
+:root {
+    --font-small: 0.8rem;
+    --font-medium: 1.2rem;
+    --font-large: 1.6rem;
+    --font-family: Arial, Helvetica, sans-serif;
+    --color-principal: #958689;
+    --color-secundario: #e6d4d0;
+    --color-terciario: #e3d9e4;
+    --color-font: #000000;
+    --color-font-light: #e3d9e4;
+    --color-btn: #333;
+    --color-tarjetas:#ceb8a6;
+    --color-font-tarjetas:#ede9e4;
+
+    --margin-small: 0.8rem;
+    --margin-medium: 1.2rem;
+    --margin-large: 1.6rem;
+
+    --padding-small: 0.8rem;
+    --padding-medium: 1.2rem;
+    --padding-large: 1.6rem;
+
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*estilos generales*/
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+}
+
+html {
+    background: linear-gradient(var(--color-principal), var(--color-terciario));
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*Estilos del nav*/
+nav {
+    display: flex;
+    margin: var(--margin-small);
+    justify-content: space-evenly;
+    align-items: center;
+    padding: var(--padding-small);
+}
+
+nav div img {
+    display: inline-block;
+    width: 80%;
+    min-width: 5em;
+    border-radius: 20px;
+    max-width: 12em;
+    margin-right: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul li a {
+    display: inline;
+    margin-right: var(--margin-medium);
+    text-decoration: none;
+    color: var(--color-font-light);
+    font-size: var(--font-large);
+}
+
+nav ul li a:hover {
+    border-radius: 30px;
+    color: var(--color-font);
+    text-shadow: 1px 2px 2px var(--color-terciario);
+    text-shadow: 0px 0px 20px var(--color-terciario);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 25vh;
+
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    text-align: center;
+    color: var(--color-font-light);
+    position: absolute;
+    top: 38%;
+    left: 5%;
+}
+
+.content h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/*Estilos de seccion nuestro equipo*/
+#empleados {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    text-align: center;
+}
+
+.empleados h2 {
+    color: var(--color-font-light);
+    font-size: var(--font-large);
+    margin: 2rem;
+    font-weight: bold;
+}
+
+.empleado {
+    width: 30%;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    background-color: var(--color-secundario);
+    text-align: center;
+    border: 2px solid var(--color-terciario);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.empleados h3 {
+    display: block;
+    font-size: var(--font-medium);
+    margin-bottom: var(--margin-small);
+    font-weight: bold;
+}
+
+.empleado img {
+    width: 50%;
+    height: 25%;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    border: 2px solid var(--color-terciario);
+}
+
+.empleado p {
+    font-weight: bold;
+    object-fit: contain;
+}
+
+.empleado ul {
+    padding: 0;
+    text-align: left;
+}
+
+.empleado ul li {
+    list-style: none;
+}
+
+.empleado a {
+    display: block;
+    margin-top: var(--margin-small);
+    padding: var(--padding-small);
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 100ms;
+}
+
+.empleado a:hover {
+    background-color: var(--color-tarjetas);
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+
+/*estilos de mapa*/
+
+#ubicacion h2 {
+    font-size: var(--font-large);
+    text-align: center;
+}
+
+.mapa {
+    max-width: 600px;
+    border: 2px solid var(--color-principal);
+    margin: 1.5rem auto;
+}
+
+footer {
+    background-color: var(--color-principal);
+    color: var(--color-font-light);
+    padding: var(--padding-small);
+    text-align: center;
+}
+
+/*HTML Servicio*/
+.servicios{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.card {
+    position: relative;
+    width: 30rem;
+    height: 27rem;
+    margin: 0.5rem;
+}
+
+.card .cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-right: 10px;
+
+}
+
+.card .frontal {
+    transform: perspective(600px)rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .frontal img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .frontal h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    line-height: 45px;
+    color:var(--color-terciario);
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.card .trasera {
+    transform: perspective(600px) rotateY(180deg);
+    background: var(--color-tarjetas);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-font-tarjetas);
+    box-shadow: 0 5px 10px black;
+
+}
+
+.card .trasera .comprar {
+    border-top: solid 1px var(--color-font-tarjetas);
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .trasera .comprar a {
+    color: var(--color-font-tarjetas);
+}
+
+.card:hover .frontal {
+    transform: perspective(600px)rotateY(180deg)
+}
+
+.card:hover .trasera {
+    transform: perspective(600px)rotateY(360deg)
+}
+/* Estilos para dispositivos grandes */
+@media (min-width: 1024px) {
+    .servicios {
+      justify-content: space-between;
+    }
+  }
+  
+  /* Estilos para dispositivos medianos */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .servicios {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .card {
+      width: 45%;
+    }
+  }
+  
+  /* Estilos para dispositivos pequeños */
+  @media (max-width: 767px) {
+    header nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+    header nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    .servicios {
+      flex-direction: column;
+      align-items: center;
+    }
+    .card {
+      width: 100%;
+    }
+  }
+
+/*HTML Contacto*/
+
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-principal);
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: var(--color-btn);
+    color: var(--color-font-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label,
+legend {
+    font-size: var(--font-medium);
+    font-weight: bold;
+    display: block;
+    margin: 0.5rem;
+}
+
+/* Contenedor */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid var(--color-principal);
+    border-radius: 10px;
+    background-color: var(--color-secundario);
+}
+
+/* Datos de contacto y redes sociales */
+.contact-info {
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid var(--color-terciario);
+    border-radius: 50%;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+.enviar {
+    width: 40%;
+    padding: var(--padding-small);
+    font-size: var(--font-medium);
+    color: var(--color-principal);
+    background-color: var(--color-secundario);
+    border: 2px solid var(--color-secundario);
+    border-radius: 20px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: var(--color-background-tri-yellow);
+    color: var(--color-background-tri);
+    border: 2px solid var(--color-background-tri);
+    transform: scale(1.1);
+}
+
+.horarios {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    margin: var(--margin-small);
+    text-align: center;
+}
+
+thead {
+    background: var(--color-principal);
+    color: var(--color-font-light);
+    padding: var(--padding-small);
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 1px solid var(--color-principal);
+    padding: var(--padding-small);
+}
+
+/*HTML Reserva*/
+.reserva h2 {
+    text-align: center;
+    font-size: var(--font-large);
+    color: var(--color-font-tarjetas);
+    margin: var(--margin-medium);
+}
+
+.reserva form {
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    margin: var(--margin-medium) auto;
+    background-color: var(--color-secundario);
+    padding: var(--padding-small);
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.reserva label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: var(--margin-small);
+}
+
+.reserva input[type="date"],
+input[type="time"],
+select {
+    width: 100%;
+    padding: var(--padding-small);
+    border: 1px solid var(--color-principal);
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: var(--font-medium);
+}
+
+.reserva .reservar {
+    align-self: center;
+    width: 70%;
+    margin-top: 1rem;
+    padding: var(--padding-small);
+    font-size: var(--font-medium);
+    color: var(--color-font-tarjetas);
+    background-color: var(--color-principal);
+    border: 2px solid var(--color-tarjetas);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.reservar:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    border: 2px solid var(--color-principal);
+    transform: scale(1.1);
+}
+
