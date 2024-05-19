@@ -199,13 +199,13 @@ nav ul li a:hover {
     margin: 1.5rem auto;
 }
 
-footer {
+/* footer {
     background-color: var(--color-principal);
     color: var(--color-font-light);
     padding: var(--padding-small);
     text-align: center;
 }
-
+ */
 /*HTML Servicio*/
 .servicios{
     display: flex;
@@ -376,6 +376,7 @@ legend {
 }
 
 /* Datos de contacto y redes sociales */
+/* 
 .contact-info {
     text-align: center;
 }
@@ -396,7 +397,7 @@ legend {
     color: var(--color-terciario);
     text-decoration: none;
 }
-
+ */
 .enviar {
     width: 40%;
     padding: var(--padding-small);

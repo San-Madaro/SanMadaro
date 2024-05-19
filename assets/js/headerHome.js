@@ -7,7 +7,6 @@ const headerHome = `<nav>
 <ul>
     <li><a href="./pages/servicios.html">Servicios</a></li>
     <li><a href="./pages/reservas.html">Reservas</a></li>
-    <li><a id="meditacion" href="#">Meditación</a></li>
     <li><a href="./pages/contacto.html">Contacto</a></li>
 </ul> 
 </nav>`
