@@ -22,9 +22,11 @@
 
 
 }
-
-    
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 /*estilos generales*/
 body {
@@ -47,7 +49,7 @@ nav {
     padding: var(--padding-small);
 }
 
-nav h1 img {
+nav div img {
     display: inline-block;
     width: 80%;
     min-width: 5em;
@@ -59,6 +61,8 @@ nav h1 img {
 nav ul {
     display: flex;
     justify-content: space-evenly;
+    text-decoration: none;
+    list-style: none;
 }
 
 nav ul li a {
@@ -190,19 +194,18 @@ nav ul li a:hover {
 }
 
 .mapa {
-    margin: 0 auto;
     max-width: 600px;
     border: 2px solid var(--color-principal);
     margin: 1.5rem auto;
 }
 
-footer {
+/* footer {
     background-color: var(--color-principal);
     color: var(--color-font-light);
     padding: var(--padding-small);
     text-align: center;
 }
-
+ */
 /*HTML Servicio*/
 .servicios{
     display: flex;
@@ -228,7 +231,7 @@ footer {
 
 }
 
-.card frontal {
+.card .frontal {
     transform: perspective(600px)rotateY(0deg);
     box-shadow: 0 5px 10px #000;
 }
@@ -373,6 +376,7 @@ legend {
 }
 
 /* Datos de contacto y redes sociales */
+/* 
 .contact-info {
     text-align: center;
 }
@@ -393,7 +397,7 @@ legend {
     color: var(--color-terciario);
     text-decoration: none;
 }
-
+ */
 .enviar {
     width: 40%;
     padding: var(--padding-small);
@@ -402,7 +406,7 @@ legend {
     background-color: var(--color-secundario);
     border: 2px solid var(--color-secundario);
     border-radius: 20px;
-    /*transition: 1s all;*/
+    transition: 0.5s all;
     cursor: pointer;
 }
 
