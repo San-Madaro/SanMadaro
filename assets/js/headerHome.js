@@ -1,7 +1,7 @@
 const headerHome = `<nav>
 <div class="logo">
     <a href="./home.html">
-        <img src="./assets/img/logo san madaro.png" alt="LOGO San Madaro">
+        <img src="./assets/img/logosanmadaro.png" alt="LOGO San Madaro">
     </a>
 </div>
 <ul>

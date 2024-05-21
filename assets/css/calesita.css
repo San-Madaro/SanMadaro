@@ -3,6 +3,7 @@
     --font-medium: 1.2rem;
     --font-large: 1.6rem;
     --font-family: Arial, Helvetica, sans-serif;
+
     --color-principal: #958689;
     --color-secundario: #e6d4d0;
     --color-terciario: #e3d9e4;
@@ -65,14 +66,12 @@ main div.carrousel {
     border-radius: 2em;
     background-color: var(--color-fondo-titulo);
     box-shadow: 1em 1em 3em var(--sombra-ppal), -1em -1em 3em var(--sombra-sec);
-    /*box-shadow: 0.5em 0.5em 2em var(--blanco), -0.5em -0.5em 2em var(--sombra-sec);*/
     transition: all 0.7s ease;
   }
   
   main div.carrousel .puntos {
     width: 100%;
     margin: 1em 0 0;
-    /*background-color: red;*/
     padding: 0.4em;
     /*1em;*/
   
@@ -86,14 +85,13 @@ main div.carrousel {
   main div.carrousel .punto {
     width: 2em;
     height: 2em;
-    /*background-color: blue;*/
     margin: 1em 1em 0;
     /*0.2em; /*1em;*/
   
     /*colores y formato */
     transition: all 0.4s ease;
     border-radius: 1em;
-    border: 1px solid var(--borde-punto);
+    border: 1px solid var(--color-font);
     background-color: var(--color-btn);
     box-shadow: 0.5em 0.5em 0.5em var(--negro), -0.2em -0.2em 0.5em var(--sombra-sec);
   }
