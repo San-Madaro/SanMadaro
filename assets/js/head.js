@@ -9,6 +9,7 @@ const headHome = `<head id="headHome">
     <link rel="icon" href="./assets/ico/logo_san_madaro.ico">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/calesita.css">
 </head>`
 document.getElementById('headHome').innerHTML = headHome;
 
