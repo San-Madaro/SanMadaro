@@ -91,14 +91,18 @@ main div.carrousel {
     /*colores y formato */
     transition: all 0.4s ease;
     border-radius: 1em;
-    border: 1px solid var(--color-font);
-    background-color: var(--color-btn);
-    box-shadow: 0.5em 0.5em 0.5em var(--negro), -0.2em -0.2em 0.5em var(--sombra-sec);
+    
+    border: 5px solid var(--negro);
+    background-color: var(--color-principal);
+    box-shadow: 0.2em 0.2em 0.7em var(--color-terciario), -0.6em -0.6em 1.2em var(--color-font);
+
+
   }
   
   main div.carrousel .punto.activo {
-    background-color: var(--punto-activo);
-    border: 5px solid var(--negro);
-    box-shadow: 0.2em 0.2em 0.7em var(--sombra-sec), -0.6em -0.6em 1.2em var(--sombra-sec);
+    border: 3px solid var(--color-principal);
+    background-color: var(--color-btn);
+    box-shadow: 0.2em 0.2em 0.7em var(--color-btn), -0.6em -0.6em 1.2em var(--color-font-light);
+    
     transition: all 0.4s ease;
   }
