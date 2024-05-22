@@ -1,0 +1,108 @@
+:root{
+    --font-small: 0.8rem;
+    --font-medium: 1.2rem;
+    --font-large: 1.6rem;
+    --font-family: Arial, Helvetica, sans-serif;
+
+    --color-principal: #958689;
+    --color-secundario: #e6d4d0;
+    --color-terciario: #e3d9e4;
+    --color-font: #000000;
+    --color-font-light: #e3d9e4;
+    --color-btn: #333;
+    --color-tarjetas:#ceb8a6;
+    --color-font-tarjetas:#ede9e4;
+}
+
+main div.carrousel {
+    width: 90%;
+    max-width: 120em;
+    min-width: 20em;
+    padding: 2em 2.5em;
+    margin: 2em auto;
+  
+    /*formato y colores */
+    color: var(--negro);
+    border-radius: 1em;
+    background-color: var(--color-principal);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec);
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+  }
+  
+  main div.carrousel div.grande {
+    width: 500%;
+    /* tiene un ancho del total de imagenes que contenga, en este caso serian X imagenes = 200%*/
+  
+    /*para que aparezcan junto una a la otra */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 2.5em;
+  
+    /*formato y colores */
+    color: var(--color);
+    border-radius: 2em;
+    background-color: var(--fondo-01-carr-grande);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--borde-negro);
+  
+    transform: translateX(0%);
+    /* con -X% se mueve hacia la izq, mostrando la segunda foto */
+    transition: all 0.5s ease-in-out;
+  }
+  
+  main div.carrousel .img {
+    width: calc(100%/5 - 6em);
+    /* porque son X=5 imaganes*/
+    min-height: 10vh;
+    max-height: 50vh;
+    min-width: 13em;
+    /******/
+  
+    /*colores y formato*/
+    color: var(--negro);
+  
+    border-radius: 2em;
+    background-color: var(--color-fondo-titulo);
+    box-shadow: 1em 1em 3em var(--sombra-ppal), -1em -1em 3em var(--sombra-sec);
+    transition: all 0.7s ease;
+  }
+  
+  main div.carrousel .puntos {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    /*1em;*/
+  
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  main div.carrousel .punto {
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    /*0.2em; /*1em;*/
+  
+    /*colores y formato */
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    
+    border: 5px solid var(--negro);
+    background-color: var(--color-principal);
+    box-shadow: 0.2em 0.2em 0.7em var(--color-terciario), -0.6em -0.6em 1.2em var(--color-font);
+
+
+  }
+  
+  main div.carrousel .punto.activo {
+    border: 3px solid var(--color-principal);
+    background-color: var(--color-btn);
+    box-shadow: 0.2em 0.2em 0.7em var(--color-btn), -0.6em -0.6em 1.2em var(--color-font-light);
+    
+    transition: all 0.4s ease;
+  }

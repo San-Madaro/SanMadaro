@@ -10,7 +10,6 @@
     --color-font-tarjetas:#ede9e4;
     --color-fondo: linear-gradient(var(--color-terciario), var(--color-principal));
 
-   /*  --sombreado-texto-entrar: 1px 1px 5px rgba(80, 2, 90, 0.8); */
 }
 
 /** FOOTER del sitio */
@@ -37,7 +36,6 @@ footer ul.footer-sociales {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    /* padding-left: 0; */
     padding: 1em 2.5em;
     align-items: center;
     align-content: center;
@@ -46,7 +44,7 @@ footer ul.footer-sociales {
 footer ul li {
     padding: 0.5em;
     width: 17vw;
-    height: 5vh;
+    height: 7vh;
 
 }
 .contenedor-footer-hijo1, .contenedor-footer-hijo2, 
@@ -60,12 +58,9 @@ footer ul li {
     border-radius: 1.2vh;
     padding: 0.5vh;
     margin: 0vh 0.5vw;
-    /*align-self: center;*/
-    /* text-align: center; */
     justify-content: center;
     align-content: center;
     align-items: center;
-    /*color: var(--texto-top-footer);*/   
     transition: all 0.5s ease;
 }
 .contenedor-footer-hijo1:hover, .contenedor-footer-hijo2:hover, 

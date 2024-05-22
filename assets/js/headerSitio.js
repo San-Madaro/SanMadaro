@@ -3,7 +3,7 @@ const headerSitio = `<header class="headerSitio">
 <nav>
   <div class="logo">
     <a href="../home.html">
-      <img src="../assets/img/logo san madaro.png" alt="logo">
+      <img src="../assets/img/logosanmadaro.png" alt="logo">
     </a>
   </div>
   <ul>

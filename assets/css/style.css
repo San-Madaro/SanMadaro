@@ -128,7 +128,7 @@ nav ul li a:hover {
 }
 
 .empleado {
-    width: 30%;
+    width: 38%;
     margin: 1rem 1rem;
     padding: 1rem 1rem;
     background-color: var(--color-secundario);
@@ -194,18 +194,24 @@ nav ul li a:hover {
 }
 
 .mapa {
-    max-width: 600px;
-    border: 2px solid var(--color-principal);
+    min-width: 320px;
+    max-width: 800px;
+    min-height: 300px;
+    background-color: var(--color-secundario);
     margin: 1.5rem auto;
+    align-content: center;
+    border-radius: 2em;
 }
 
-/* footer {
-    background-color: var(--color-principal);
-    color: var(--color-font-light);
-    padding: var(--padding-small);
-    text-align: center;
+.mapa iframe {
+    width: 100%;
+    height: 17vh;
+    padding: 1em;
+    border-radius: 2em;
+
 }
- */
+
+
 /*HTML Servicio*/
 .servicios{
     display: flex;
@@ -289,6 +295,9 @@ nav ul li a:hover {
     .servicios {
       justify-content: space-between;
     }
+    .empleado {
+        width: 30%;
+    }
   }
   
   /* Estilos para dispositivos medianos */
@@ -318,6 +327,10 @@ nav ul li a:hover {
     }
     .card {
       width: 100%;
+    }
+
+    .empleado{
+        width: 80%;
     }
   }
 
@@ -376,28 +389,6 @@ legend {
 }
 
 /* Datos de contacto y redes sociales */
-/* 
-.contact-info {
-    text-align: center;
-}
-
-.social-links {
-    margin-top: 20px;
-}
-
-.social-links a {
-    display: inline-block;
-    margin: 0 10px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    border: 1px solid var(--color-terciario);
-    border-radius: 50%;
-    color: var(--color-terciario);
-    text-decoration: none;
-}
- */
 .enviar {
     width: 40%;
     padding: var(--padding-small);
