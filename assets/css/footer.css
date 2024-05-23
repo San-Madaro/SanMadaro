@@ -33,7 +33,6 @@ footer ul.footer-sociales {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     padding: 1em 2.5em;
