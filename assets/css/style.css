@@ -329,6 +329,12 @@ section#ubicacion {
         border-radius: 2em;
         width: 90%;
     }
+    
+    .iconos-sociales i {
+        font-size: 3.5em;
+    }
+
+
 }
 
 /* Estilos para dispositivos medianos */
@@ -359,6 +365,10 @@ section#ubicacion {
     section#ubicacion {
         width: 90%;
         margin-top: 5vh;
+    }
+
+    .iconos-sociales i {
+        font-size: 2em;
     }
 
 }
@@ -406,7 +416,15 @@ section#ubicacion {
         border: 0px;
     }
 
+
+    .iconos-sociales i {
+        font-size: 1.5em;
+    }
+
 }
+
+
+
 
 /*HTML Contacto*/
 
