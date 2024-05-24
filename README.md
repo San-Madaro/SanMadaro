@@ -9,9 +9,7 @@ link navegable: https://san-madaro.github.io/sanmadaro/home.html
 
 Datos grupales:
 
-Link-Página: https://san-madaro.github.io/sanmadaro/home.html
 
-Link-Repositorio: https://github.com/San-Madaro/sanmadaro
 
 GRUPO N°: 1
 
