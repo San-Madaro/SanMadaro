@@ -1,71 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head class="head" id="headContacto">
-    <title>SPA San Daro</title>
+<head class="head" id="headHome">
+    <meta charset="UTF-8">
+    <title>Spa San Daro</title>
 </head>
 
 <body>
     <header id="headerSitio"></header>
-    
+
     <main>
 
-        <body>
+        <div class="container">
+            <h2>¡Contáctanos!</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-            <div class="container">
-                <h2>¡Contáctanos!</h2>
-                <form action="#" method="post">
-                    <label for="nombre">Nombre y Apellido:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
 
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required>
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
 
-                    <label for="asunto">Asunto:</label>
-                    <input type="text" id="asunto" name="asunto" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <label><input type="checkbox" name="promociones">Deseo recibir promociones por correo
+                    electrónico</label>
 
-                    <label><input type="checkbox" name="promociones">Deseo recibir promociones por correo
-                        electrónico</label>
+                <button type="submit">Enviar</button>
+            </form>
 
-                    <button type="submit">Enviar</button>
-                </form>
+        </div>
 
-            </div>
+        <div class="horarios">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
 
-            <div class="horarios">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Día</th>
-                            <th>Horario</th>
-                        </tr>
-                    </thead>
-                    
-                    <tbody>
-                        <tr>
-                            <td>Lunes</td>
-                            <td>08hs ~ 20hs</td>
-                        </tr>
-                        <tr>
-                            <td>Miercoles</td>
-                            <td>08hs ~ 20hs</td>
-                        </tr>
-                        <tr>
-                            <td>Viernes</td>
-                            <td>08hs ~ 20hs</td>
-                        </tr>
-                    </tbody>
-                    
-                </table>
-            </div>
-        </main>
-        <footer class="footer"></footer>
-        <script src="../assets/js/headContacto.js"></script>
-        <script src="../assets/js/headerSitio.js"></script>
-        <script src="../assets/js/footer.js"></script>
-    </body>
-    
-    </html>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08hs ~ 20hs</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08hs ~ 20hs</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08hs ~ 20hs</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+    <script src="../assets/js/headContacto.js"></script>
+    <script src="../assets/js/headerSitio.js"></script>
+    <script src="../assets/js/footer.js"></script>
+</body>
+
+</html>
