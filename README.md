@@ -30,7 +30,7 @@ PUNTOS A RESOLVER:
 
 4- En la seccion de servicios, hacemos transformacion con las tarjetas. Fue algo que vimos en un video y quisimos aplicarlo.
 
-5- Presentamos con 4 items. Y ya agregamos un 5to. No pudimos validarlo con JS.
+5- Presentamos con 4 items. Y ya agregamos un 5to.
 
 6- El sitio está optimizado para usarlo en cualquier dispositivo. 
 
@@ -38,7 +38,7 @@ PUNTOS A RESOLVER:
 
 8- El sitio se subió a GitPages y puede ser navegada por cualquier dispositivo
 
-9- El sitio pasa sin inconvenientes nuestros, sin embargo tira un error en el iframe de google.
+9- El sitio pasa sin inconvenientes.
 
 10- Usamos iconos y cambios de letra.
 
