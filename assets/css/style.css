@@ -133,11 +133,10 @@ section#empleados h2 {
 }
 
 .empleado img {
-    height: 20vh;
-    margin-bottom: 10px;
-    border-radius: 50px;
-    box-sizing: border-box;
-    border: 2px solid var(--color-terciario);
+    height: 25vh;
+    margin-bottom: 0.5em;
+    border-radius: 1em;
+    border: 2px solid var(--color-primario);
 }
 
 .empleado p {
@@ -211,16 +210,42 @@ section#ubicacion {
     align-content: center;
     align-items: center;
     padding: 1em;
+} */
+.servicios {
+    display: grid;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    padding: 2em;
 }
- */
-.card {
+/* .card {
     position: relative;
-    width: 30rem;
+    width: 90%;
     height: 27rem;
-    margin: 0.5rem;
+    margin: 1em auto;
+} */
+
+.card {
+    display: inline-block;
+    margin: 1rem;
+    padding: 2rem 1rem;
+    background-color: var(--color-secundario);
+    text-align: center;
+    border: 2px solid var(--color-terciario);
+    border-radius: 1em;
+
+    backface-visibility: hidden;
+    border-radius: 1em;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 0.5em;
 }
 
-.card .cara {
+/* .card .cara {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -230,7 +255,14 @@ section#ubicacion {
     transition: 0.5s;
     padding-right: 10px;
 
-}
+} */
+/* .card .cara {
+    backface-visibility: hidden;
+    border-radius: 1em;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 0.5em;
+} */
 
 .card .frontal {
     transform: perspective(600px)rotateY(0deg);
