@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root {
+    --font-small: 0.8rem;
+    --font-medium: 1.2rem;
+    --font-large: 1.6rem;
+    --font-family: "Dancing Script", cursive;
+    --color-principal: #958689;
+    --color-secundario: #e6d4d0;
+    --color-terciario: #e3d9e4;
+    --color-font: #000000;
+    --color-font-light: #e3d9e4;
+    --color-btn: #333;
+    --color-tarjetas: #ceb8a6;
+    --color-font-tarjetas: #ede9e4;
+
+    --margin-small: 0.8rem;
+    --margin-medium: 1.2rem;
+    --margin-large: 1.6rem;
+
+    --padding-small: 0.8rem;
+    --padding-medium: 1.2rem;
+    --padding-large: 1.6rem;
+
+}

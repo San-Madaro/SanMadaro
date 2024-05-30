@@ -1,27 +1,4 @@
-:root {
-    --font-small: 0.8rem;
-    --font-medium: 1.2rem;
-    --font-large: 1.6rem;
-    --font-family: Arial, Helvetica, sans-serif;
-    --color-principal: #958689;
-    --color-secundario: #e6d4d0;
-    --color-terciario: #e3d9e4;
-    --color-font: #000000;
-    --color-font-light: #e3d9e4;
-    --color-btn: #333;
-    --color-tarjetas: #ceb8a6;
-    --color-font-tarjetas: #ede9e4;
-
-    --margin-small: 0.8rem;
-    --margin-medium: 1.2rem;
-    --margin-large: 1.6rem;
-
-    --padding-small: 0.8rem;
-    --padding-medium: 1.2rem;
-    --padding-large: 1.6rem;
-
-
-}
+@import url('./variables.css');
 
 * {
     padding: 0;
@@ -29,17 +6,27 @@
     box-sizing: border-box;
 }
 
-/*estilos generales*/
-body {
-    font-family: var(--font-family);
-    line-height: 1.6;
-}
-
 html {
     background: linear-gradient(var(--color-principal), var(--color-terciario));
     width: 100%;
     overflow-x: hidden;
 }
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+}
+
+
+/*Contenedor general*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+
+
 
 /*Estilos del nav*/
 nav {
@@ -114,13 +101,20 @@ nav ul li a:hover {
 }
 
 /*Estilos de seccion nuestro equipo*/
-#empleados {
+/* #empleados {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: nowrap;
     width: 100%;
     text-align: center;
+} */
+
+.empleados {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
 }
 
 .empleados h2 {
@@ -220,7 +214,7 @@ section#ubicacion {
 
 
 /*HTML Servicio*/
-.servicios {
+/* .servicios {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -229,7 +223,7 @@ section#ubicacion {
     align-items: center;
     padding: 1em;
 }
-
+ */
 .card {
     position: relative;
     width: 30rem;
@@ -350,14 +344,14 @@ legend {
 }
 
 /* Contenedor */
-.container {
+/* .container {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid var(--color-principal);
     border-radius: 10px;
     background-color: var(--color-secundario);
-}
+} */
 
 .enviar {
     width: 40%;
@@ -460,13 +454,22 @@ select {
 
 /* Estilos para dispositivos grandes */
 @media (min-width: 1024px) {
-    .servicios {
-        justify-content: space-between;
+    
+    .grand-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .empleado {
-        width: 30%;
+    .empleados {
+        grid-template-columns: repeat(3, 1fr);
     }
+
+   /*  .servicios {
+        justify-content: space-between;
+    } */
+
+    /* .empleado {
+        width: 30%;
+    } */
 
     .banner-content {
         top: 7em;
@@ -495,16 +498,24 @@ select {
 
 /* Estilos para dispositivos medianos */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .servicios {
+    .grand-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .empleados{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* .servicios {
         flex-direction: row;
         justify-content: center;
         gap: 1em;
     }
-
-    .card {
+ */
+    /* .card {
         width: 45%;
     }
-
+ */
     .banner-content h2 {
         font-size: 2em;
         font-weight: bold;
@@ -532,6 +543,14 @@ select {
 
 /* Estilos para dispositivos pequeños */
 @media (max-width: 767px) {
+    .grand-container {
+        grid-template-columns: 1fr;
+    }
+
+    .empleados {
+        grid-template-columns: 1fr;
+    }
+    
     header nav {
         flex-direction: column;
         gap: 10px;
@@ -542,14 +561,14 @@ select {
         align-items: center;
     }
 
-    .servicios {
+    /* .servicios {
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
-    .card {
+   /*  .card {
         width: 90%;
-    }
+    } */
 
     .empleado {
         width: 90%;
