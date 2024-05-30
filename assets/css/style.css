@@ -110,6 +110,14 @@ nav ul li a:hover {
     text-align: center;
 } */
 
+section#empleados h2 {
+    display: flex;
+    color: var(--color-font-light);
+    font-size: var(--font-large);
+    margin: 2rem auto;
+    font-weight: bold;
+    justify-content: center;
+}
 .empleados {
     display: grid;
     grid-template-columns: 1fr;
@@ -117,34 +125,24 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-.empleados h2 {
-    color: var(--color-font-light);
-    font-size: var(--font-large);
-    margin: 2rem;
-    font-weight: bold;
-}
-
 .empleado {
-    width: 38%;
-    margin: 1rem 1rem;
-    padding: 1rem 1rem;
+    display: inline-block;
+    margin: 1rem;
+    padding: 2rem 1rem;
     background-color: var(--color-secundario);
     text-align: center;
     border: 2px solid var(--color-terciario);
-    border-radius: 10px;
-    display: inline-block;
+    border-radius: 1em;
 }
 
-.empleados h3 {
-    display: block;
+.empleado h3 {
     font-size: var(--font-medium);
     margin-bottom: var(--margin-small);
     font-weight: bold;
 }
 
 .empleado img {
-    width: 50%;
-    height: 25%;
+    height: 20vh;
     margin-bottom: 10px;
     border-radius: 50px;
     box-sizing: border-box;
