@@ -26,7 +26,9 @@ body {
 }
 
 
-
+.logo {
+    text-align: center;
+}
 
 /*Estilos del nav*/
 nav {
@@ -183,9 +185,6 @@ section#ubicacion {
 }
 
 .mapa {
-    min-width: 320px;
-    max-width: 800px;
-    min-height: 300px;
     margin: 1.5rem auto;
     align-content: center;
     border-radius: 2em;
@@ -193,7 +192,7 @@ section#ubicacion {
 
 .mapa iframe {
     width: 100%;
-    height: 33vh;
+    height: 100%;
     padding: 1em;
     border-radius: 2em;
     border: 0px;
@@ -211,7 +210,7 @@ section#ubicacion {
     align-items: center;
     padding: 1em;
 } */
-.servicios {
+/* .servicios {
     display: grid;
     align-content: center;
     justify-content: space-evenly;
@@ -221,7 +220,14 @@ section#ubicacion {
     grid-template-columns: 1fr;
     grid-gap: 1em;
     padding: 2em;
+} */
+
+.servicios {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90%, 3fr));
 }
+
 /* .card {
     position: relative;
     width: 90%;
@@ -233,16 +239,15 @@ section#ubicacion {
     display: inline-block;
     margin: 1rem;
     padding: 2rem 1rem;
+    height: 95%;
     background-color: var(--color-secundario);
     text-align: center;
     border: 2px solid var(--color-terciario);
     border-radius: 1em;
 
     backface-visibility: hidden;
-    border-radius: 1em;
     overflow: hidden;
     transition: 0.5s;
-    padding: 0.5em;
 }
 
 /* .card .cara {
@@ -256,13 +261,16 @@ section#ubicacion {
     padding-right: 10px;
 
 } */
-/* .card .cara {
+.card .cara {
+    padding: 0.5em 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
     backface-visibility: hidden;
     border-radius: 1em;
     overflow: hidden;
     transition: 0.5s;
-    padding: 0.5em;
-} */
+}
 
 .card .frontal {
     transform: perspective(600px)rotateY(0deg);
@@ -502,12 +510,11 @@ select {
     }
 
     .mapa {
-        min-width: 320px;
-
         margin: 1.5rem auto;
         align-content: center;
         border-radius: 2em;
         width: 90%;
+        height: 30vh;
     }
     
     .iconos-sociales i {
@@ -543,11 +550,7 @@ select {
     }
 
     .mapa iframe {
-        width: 100%;
-        height: 23vh;
-        padding: 1em;
-        border-radius: 2em;
-        border: 0px;
+        height: 35vh;
 
     }
 
@@ -587,9 +590,10 @@ select {
         align-items: center;
     } */
 
-   /*  .card {
+  /*   .card {
         width: 90%;
     } */
+
 
     .empleado {
         width: 90%;
@@ -608,7 +612,6 @@ select {
 
     .mapa iframe {
         width: 100%;
-        height: 19vh;
         border-radius: 2em;
         border: 0px;
     }
