@@ -6,33 +6,16 @@
     box-sizing: border-box;
 }
 
-html {
-    background: linear-gradient(var(--color-principal), var(--color-terciario));
-    width: 100%;
-    overflow-x: hidden;
-}
-
+/*estilos generales*/
 body {
     font-family: var(--font-family);
     line-height: 1.6;
 }
 
-
-/*Contenedor general*/
-.grand-container {
-    grid-template-columns: 1fr;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2em;
-    padding: 2em;
-}
-
-
-.logo {
-    text-align: center;
+html {
+    background: linear-gradient(var(--color-principal), var(--color-terciario));
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /*Estilos del nav*/
@@ -108,43 +91,47 @@ nav ul li a:hover {
 }
 
 /*Estilos de seccion nuestro equipo*/
-section#empleados h2 {
+#empleados {
     display: flex;
-    color: var(--color-font-light);
-    font-size: var(--font-large);
-    margin: 2rem auto;
-    font-weight: bold;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    text-align: center;
 }
 
-.empleados {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    padding: 2em;
+.empleados h2 {
+    color: var(--color-font-light);
+    font-size: var(--font-large);
+    margin: 2rem;
+    font-weight: bold;
 }
 
 .empleado {
-    display: inline-block;
-    margin: 1rem;
-    padding: 2rem 1rem;
+    width: 38%;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
     background-color: var(--color-secundario);
     text-align: center;
     border: 2px solid var(--color-terciario);
-    border-radius: 1em;
+    border-radius: 10px;
+    display: inline-block;
 }
 
-.empleado h3 {
+.empleados h3 {
+    display: block;
     font-size: var(--font-medium);
     margin-bottom: var(--margin-small);
     font-weight: bold;
 }
 
 .empleado img {
-    height: 25vh;
-    margin-bottom: 0.5em;
-    border-radius: 1em;
-    border: 2px solid var(--color-primario);
+    width: 50%;
+    height: 25%;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    border: 2px solid var(--color-terciario);
 }
 
 .empleado p {
@@ -191,6 +178,9 @@ section#ubicacion {
 }
 
 .mapa {
+    min-width: 320px;
+    max-width: 800px;
+    min-height: 300px;
     margin: 1.5rem auto;
     align-content: center;
     border-radius: 2em;
@@ -198,7 +188,7 @@ section#ubicacion {
 
 .mapa iframe {
     width: 100%;
-    height: 100%;
+    height: 33vh;
     padding: 1em;
     border-radius: 2em;
     border: 0px;
@@ -208,37 +198,33 @@ section#ubicacion {
 
 /*HTML Servicio*/
 .servicios {
-    width: 100%;
-    display: grid;
-    /*grid-template-columns: repeat(auto-fit, minmax(90%, 3fr));*/
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 1em;
 }
 
 .card {
-    margin: 1rem auto;
-    padding: 2rem 1rem;
-    height: 95%;
-    width: 90%;
-    background-color: var(--color-secundario);
-    text-align: center;
-    border: 2px solid var(--color-terciario);
-    border-radius: 1em;
-    backface-visibility: hidden;
-    overflow: hidden;
-    transition: 0.5s;
+    position: relative;
+    width: 30rem;
+    height: 27rem;
+    margin: 0.5rem;
 }
 
 .card .cara {
-    padding: 0.5em 0;
+    position: absolute;
     width: 100%;
     height: 100%;
-    margin: auto;
     backface-visibility: hidden;
-    border-radius: 1em;
+    border-radius: 10px;
     overflow: hidden;
     transition: 0.5s;
-}
+    padding-right: 10px;
 
+}
 
 .card .frontal {
     transform: perspective(600px)rotateY(0deg);
@@ -246,11 +232,10 @@ section#ubicacion {
 }
 
 .card .frontal img {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 1rem;
 }
 
 .card .frontal h3 {
@@ -264,7 +249,7 @@ section#ubicacion {
     text-align: center;
 }
 
-/* .card .trasera {
+.card .trasera {
     transform: perspective(600px) rotateY(180deg);
     background: var(--color-tarjetas);
     display: flex;
@@ -274,22 +259,8 @@ section#ubicacion {
     text-decoration: none;
     color: var(--color-font-tarjetas);
     box-shadow: 0 5px 10px black;
-} */
 
-.card .trasera {
-    transform: perspective(600px) rotateY(180deg);
-    background: var(--color-tarjetas);
-    position: relative;
-    top: -100%;
-    /* display: flex; */
-    /* flex-direction: column;
-    justify-content: space-between; */
-    text-align: center;
-    text-decoration: none;
-    color: var(--color-font-tarjetas);
-    box-shadow: 0 5px 10px black;
 }
-
 
 .card .trasera .comprar {
     border-top: solid 1px var(--color-font-tarjetas);
@@ -312,20 +283,9 @@ section#ubicacion {
 
 
 /*HTML Contacto*/
-/* Contenedor */
-.container {
-    max-width: 600px;
-    width: 90%;
-    margin: 2em auto;
-    padding: 2em;
-    border: 1px solid var(--color-principal);
-    border-radius: 1em;
-    background-color: var(--color-secundario);
-}
 
 form {
     margin-bottom: 20px;
-    background-color: var(--color-secundario);
 }
 
 form label {
@@ -366,6 +326,15 @@ legend {
     margin: 0.5rem;
 }
 
+/* Contenedor */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid var(--color-principal);
+    border-radius: 10px;
+    background-color: var(--color-secundario);
+}
 
 .enviar {
     width: 40%;
@@ -421,7 +390,6 @@ th {
     display: flex;
     flex-direction: column;
     max-width: 40rem;
-    width: 90%;
     margin: var(--margin-medium) auto;
     background-color: var(--color-secundario);
     padding: var(--padding-small);
@@ -469,22 +437,13 @@ select {
 
 /* Estilos para dispositivos grandes */
 @media (min-width: 1024px) {
-
-    .grand-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .empleados {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    /*  .servicios {
+    .servicios {
         justify-content: space-between;
-    } */
+    }
 
-    /* .empleado {
+    .empleado {
         width: 30%;
-    } */
+    }
 
     .banner-content {
         top: 7em;
@@ -496,30 +455,31 @@ select {
     }
 
     .mapa {
+        min-width: 320px;
+
         margin: 1.5rem auto;
         align-content: center;
         border-radius: 2em;
         width: 90%;
-        height: 30vh;
     }
-
+    
     .iconos-sociales i {
-        font-size: 2.3em;
+        font-size: 3em;
     }
 
-    .servicios {
-        grid-template-columns: repeat(1fr);
-    }
+
 }
 
 /* Estilos para dispositivos medianos */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .grand-container {
-        grid-template-columns: repeat(2, 1fr);
+    .servicios {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1em;
     }
 
-    .empleados {
-        grid-template-columns: repeat(2, 1fr);
+    .card {
+        width: 45%;
     }
 
     .banner-content h2 {
@@ -528,7 +488,11 @@ select {
     }
 
     .mapa iframe {
-        height: 35vh;
+        width: 100%;
+        height: 23vh;
+        padding: 1em;
+        border-radius: 2em;
+        border: 0px;
 
     }
 
@@ -538,24 +502,13 @@ select {
     }
 
     .iconos-sociales i {
-        font-size: 1.7em;
+        font-size: 2em;
     }
 
-    .servicios {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 /* Estilos para dispositivos pequeños */
 @media (max-width: 767px) {
-    .grand-container {
-        grid-template-columns: 1fr;
-    }
-
-    .empleados {
-        grid-template-columns: 1fr;
-    }
-
     header nav {
         flex-direction: column;
         gap: 10px;
@@ -566,6 +519,14 @@ select {
         align-items: center;
     }
 
+    .servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
 
     .empleado {
         width: 90%;
@@ -584,13 +545,15 @@ select {
 
     .mapa iframe {
         width: 100%;
+        height: 19vh;
         border-radius: 2em;
         border: 0px;
     }
 
 
     .iconos-sociales i {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
 }
+
