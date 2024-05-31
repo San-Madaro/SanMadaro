@@ -11,6 +11,7 @@ html {
     width: 100%;
     overflow-x: hidden;
 }
+
 body {
     font-family: var(--font-family);
     line-height: 1.6;
@@ -115,6 +116,7 @@ section#empleados h2 {
     font-weight: bold;
     justify-content: center;
 }
+
 .empleados {
     display: grid;
     grid-template-columns: 1fr;
@@ -426,6 +428,7 @@ th {
     border-radius: 50px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
+
 .reserva label {
     font-weight: bold;
     display: block;
@@ -466,7 +469,7 @@ select {
 
 /* Estilos para dispositivos grandes */
 @media (min-width: 1024px) {
-    
+
     .grand-container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -475,7 +478,7 @@ select {
         grid-template-columns: repeat(3, 1fr);
     }
 
-   /*  .servicios {
+    /*  .servicios {
         justify-content: space-between;
     } */
 
@@ -499,15 +502,14 @@ select {
         width: 90%;
         height: 30vh;
     }
-    
+
     .iconos-sociales i {
         font-size: 2.3em;
     }
 
     .servicios {
         grid-template-columns: repeat(1fr);
-
-
+    }
 }
 
 /* Estilos para dispositivos medianos */
@@ -516,10 +518,10 @@ select {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .empleados{
+    .empleados {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .banner-content h2 {
         font-size: 2em;
         font-weight: bold;
@@ -553,7 +555,7 @@ select {
     .empleados {
         grid-template-columns: 1fr;
     }
-    
+
     header nav {
         flex-direction: column;
         gap: 10px;
@@ -592,4 +594,3 @@ select {
     }
 
 }
-
