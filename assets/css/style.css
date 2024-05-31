@@ -119,7 +119,7 @@ section#empleados h2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    padding: 20px;
+    padding: 2em;
 }
 
 .empleado {
@@ -208,7 +208,8 @@ section#ubicacion {
 .servicios {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(90%, 3fr));
+    /*grid-template-columns: repeat(auto-fit, minmax(90%, 3fr));*/
+    grid-template-columns: 1fr;
 }
 
 .card {
@@ -503,6 +504,10 @@ select {
         font-size: 2.3em;
     }
 
+    .servicios {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 
 }
 
@@ -516,16 +521,6 @@ select {
         grid-template-columns: repeat(2, 1fr);
     }
     
-    /* .servicios {
-        flex-direction: row;
-        justify-content: center;
-        gap: 1em;
-    }
- */
-    /* .card {
-        width: 45%;
-    }
- */
     .banner-content h2 {
         font-size: 2em;
         font-weight: bold;
@@ -545,6 +540,9 @@ select {
         font-size: 1.7em;
     }
 
+    .servicios {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* Estilos para dispositivos pequeños */
@@ -566,15 +564,6 @@ select {
         flex-direction: column;
         align-items: center;
     }
-
-    /* .servicios {
-        flex-direction: column;
-        align-items: center;
-    } */
-
-  /*   .card {
-        width: 90%;
-    } */
 
 
     .empleado {
