@@ -9,6 +9,7 @@ const headSitio = `<head class="head" id="headSitio">
 <link rel="icon" href="../assets/ico/logo_san_madaro.ico">
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="../assets/css/footer.css">
+
 </head>`
 
 document.getElementById('headSitio').innerHTML = headSitio
