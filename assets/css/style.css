@@ -478,13 +478,9 @@ select {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /*  .servicios {
-        justify-content: space-between;
-    } */
-
-    /* .empleado {
-        width: 30%;
-    } */
+    .servicios {
+        grid-template-columns: repeat(3, 1fr);        
+    }
 
     .banner-content {
         top: 7em;
