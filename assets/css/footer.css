@@ -50,7 +50,6 @@ footer ul li {
 .contenedor-footer-hijo3, .contenedor-footer-hijo4, 
 .contenedor-footer-hijo5 {
     display: flex;
-    height: 100%;
     width: 100%;
     background-color: var(--color-principal);
     border: 0.3vw solid var(--color-terciario);
