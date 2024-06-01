@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Validación de teléfono
         const telefono = document.getElementById("telefono");
         const errorTelefono = document.getElementById("errorTelefono");
-        const regexTelefono = /^[0-9]{13}$/; // Expresión regular para 13 dígitos numéricos
+        const regexTelefono = /^\d{13}$/; /* Expresión regular para 13 dígitos numéricos */
         if (!regexTelefono.test(telefono.value.trim())) {
             errorTelefono.textContent = "El teléfono debe tener exactamente 13 dígitos numéricos.";
             esValido = false;
