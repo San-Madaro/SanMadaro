@@ -12,7 +12,7 @@
     <div class="reserva">
       <h2>Reserva de Turno</h2>
 
-      <form action="procesar_reserva.php" method="post">
+      <form id="reservaForm" action="" method="post">
         <div>
           <label for="fecha">Fecha:</label>
           <input type="date" id="fecha" name="fecha" required>
@@ -25,10 +25,10 @@
           <label for="especialista">Especialista:</label>
           <select id="especialista" name="especialista" required>
             <option value="">Seleccione un especialista</option>
-            <option value="Santiago Carnabuci">Santiago Carnabuci</option>
-            <option value="Lorem Ipsum">Lorem Ipsum</option>
-            <option value="Lorem Ipsum">Lorem Ipsum</option>
-            <option value="Lorem Ipsum">Lorem Ipsum</option>
+            <option value="Federico">Federico</option>
+            <option value="Ana">Ana</option>
+            <option value="Juliana">Juliana</option>
+            <option value="Andres">Andres</option>
           </select>
         </div>
         <button type="submit" class="reservar">Reservar Turno</button>
@@ -39,6 +39,7 @@
   <script src="../assets/js/headSitio.js"></script>
   <script src="../assets/js/headerSitio.js"></script>
   <script src="../assets/js/footer.js"></script>
+  <script src="../assets/js/validReservas.js"></script>
 </body>
 
 </html>
