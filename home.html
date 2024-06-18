@@ -22,16 +22,11 @@
 
         <div class="carrousel">
             <div class="grande">
-                <img src="./assets/img/masajedeportivo.jpg"
-                alt="Masaje" class="img">
-                <img src="./assets/img/masajedescontracturante.jpg"
-                alt="Masaje" class="img">
-                <img src="./assets/img/MasajeKobido.jpg"
-                alt="Masaje" class="img">
-                <img src="./assets/img/masajesueco.jpg"
-                alt="Masaje" class="img">
-                <img src="./assets/img/masajetailandes.jpg"
-                    alt="Masaje" class="img">
+                <img src="./assets/img/masajedeportivo.jpg" alt="Masaje" class="img">
+                <img src="./assets/img/masajedescontracturante.jpg" alt="Masaje" class="img">
+                <img src="./assets/img/MasajeKobido.jpg" alt="Masaje" class="img">
+                <img src="./assets/img/masajesueco.jpg" alt="Masaje" class="img">
+                <img src="./assets/img/masajetailandes.jpg" alt="Masaje" class="img">
             </div>
 
             <ul class="puntos">
@@ -44,10 +39,10 @@
         </div>
 
         <section id="empleados">
-            <div class="empleados">
-
-                <h2>Nuestro equipo</h2>
-                <div class="empleado">
+            <h2>Nuestro equipo</h2>
+            <div class="empleados" id="cards-container-empleado">
+                
+                
                     <h3>Federico</h3>
                     <img src="./assets/img/masajista2.jpg" alt="">
                     <p>Servicios</p>
@@ -57,7 +52,9 @@
                         <li>Reflexologia</li>
                     </ul>
                     <a href="./pages/reservas.html" class=" btn">Quiero un turno</a>
-                </div>
+                
+
+                <!-- se reemplazaria por lo de arriba 
                 <div class="empleado">
                     <h3>Ana</h3>
                     <img src="./assets/img/masajista1.jpg" alt="">
@@ -90,23 +87,32 @@
                         <li>Masaje Kobido</li>
                     </ul>
                     <a href="./pages/reservas.html" class="btn">Quiero un turno</a>
-                </div>
+                </div> -->
             </div>
         </section>
         <section id="ubicacion">
             <h2>Encuentranos</h2>
             <div class="mapa">
                 <iframe title="ubicacion"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26265.129725744395!2d-58.45811200762253!3d-34.62587150816748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2341ea842b%3A0x3c99d1de5d39aec6!2sClub%20Spa%20-%20Petit%20Hotel!5e0!3m2!1ses!2sar!4v1711230858569!5m2!1ses!2sar" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26265.129725744395!2d-58.45811200762253!3d-34.62587150816748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2341ea842b%3A0x3c99d1de5d39aec6!2sClub%20Spa%20-%20Petit%20Hotel!5e0!3m2!1ses!2sar!4v1711230858569!5m2!1ses!2sar"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
     <footer class="footer"></footer>
-    <script src="./assets/js/head.js"></script>
-    <script src="./assets/js/headerHome.js"></script>
+    <script src="./assets/js/sections/head.js"></script>
+    <script src="./assets/js/sections/headerHome.js"></script>
     <script src="./assets/js/calesita.js"></script>
-    <script src="./assets/js/footer.js"></script>
+    <script src="./assets/js/sections/footer.js"></script>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/templates.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/events.js"></script>
+    <script src="assets/js/dom.js"></script>
+    <script src="main.js"></script>
+
+
 </body>
 
 </html>
