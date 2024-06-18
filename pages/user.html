@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Alta usuario</title>
+</head>
+
+<body>
+    <h2>Dando de alta a un nuevo usurario</h2>
+    <form action="" method="post">
+
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required>
+        <span class="error" id="errorNombres"></span>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+        <span class="error" id="errorApellidos"></span>
+
+        <label for="documanto">Documento (DNI):</label>
+        <input type="text" id="documento" name="documanto" required>
+        <span class="error" id="errorDocumento"></span>
+
+        <label for="fechnacimiento">Fecha de nacimiento:</label>
+        <input type="text" id="fechnacimiento" name="fechnacimiento" required>
+        <span class="error" id="errorfechnacimiento"></span>
+
+        <label for="genero">Genero (Seleccione segun como se sienta)</label>
+        <select id="genero" name="genero" required>
+            <option value="Mujer">Me siento Mujer</option>
+            <option value="Hombre">Me siento Hombre</option>
+        </select>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        <span class="error" id="erroremail"></span>
+
+        <label for="Telefono">Telefono:</label>
+        <input type="text" id="Telefono" name="Telefono" required>
+        <span class="error" id="errorTelefono"></span>
+
+        <label for="nombreUsuario">Elija un nombre de usuario:</label>
+        <input type="text" id="nombreUsuario" name="nombreUsuario" required>
+        <span class="error" id="errorNombreUsuario"></span>
+
+        <label for="clave">Elija una clave:</label>
+        <input type="text" id="clave" name="clave" required>
+        <span class="error" id="errorClave"></span>
+
+
+    </form>
+</body>
+
+</html>
